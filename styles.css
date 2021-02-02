@@ -1,0 +1,85 @@
+
+body { 
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: green;
+max-width: 800px;
+}
+#cardDrawLoop{ 
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 10px;
+max-width: 800px;
+}
+#buttonsAndInput{
+display: flex;
+flex-direction: row;
+max-height: 25px;
+justify-content: center;
+}
+input{
+display: flex;
+flex-direction: row;
+font-size: 10px;
+max-width: 80px;
+}
+button{
+display: flex;
+flex-direction: row;
+font-size: 10px;
+}
+h1 { 
+display: flex;
+flex-direction: row;
+color: black;
+font-size: 50px;
+margin-top: 5px;
+color: black;
+}
+#CardDraw{ 
+display: flex;
+flex-direction: row;
+}
+#CardBody {
+display: flex;
+background-color: green;
+min-width: max-content;
+min-height: max-content;
+}
+#ThreeSymbols{ 
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+#leftTopSymbolDiv { 
+display: flex;
+max-height: 20px;
+margin-right: 10px;
+background-color: white;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+padding-left: 5px;
+}
+#centerSymbolDiv { 
+display: flex;
+justify-self: center;
+align-self: center;
+justify-content: space-around;
+min-width: 70px;
+margin-right: 10px;
+background-color: white;
+}  
+#rightBottomSymbolDiv {
+display: flex; 
+transform: rotate(180deg);
+max-height: 20px;
+margin-right: 10px;
+background-color: white;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+padding-left: 5px;
+} 
+

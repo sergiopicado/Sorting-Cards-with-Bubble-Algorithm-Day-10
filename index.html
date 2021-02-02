@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Sorting Cards</title>
+</head>
+
+<body onload="myFunction()">
+    <div id="buttonsAndInput">
+        <input id="numberOfCardsInput" placeholder="Number of cards" type="text">
+        <button type="button" onclick="myFunction();">Draw</button>
+        <button>Sort</button>
+        <button type="button" onClick="window.location.reload();">New Game</button>
+    </div>
+    <div id="cardDrawLoop">
+    </div>
+    <script> function myFunction() {
+
+
+            let numberOfCards=document.getElementById("numberOfCardsInput").value;
+
+            for (let i = 0; i < numberOfCards; i++) {
+                // Number Generator
+                let CenterSymbolArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+                let CornerSymbolArray = [
+                    // Spades (Black)   
+                    '<p style="color:black;">&#9824</p>',
+                    // Clubes (Black)
+                    '<p style="color:black;">&#9827</p>',
+                    // Hearts (Red)
+                    '<p style="color:red;">&#9829</p>',
+                    // Diamonds (Red)
+                    '<p style="color:red;">&#9830</p>'
+                ];
+                var randomCorner = CornerSymbolArray[Math.floor(Math.random() * 4)];
+                var randomCenter = CenterSymbolArray[Math.floor(Math.random() * 14)];
+
+                let cardDrawSort = document.getElementById("cardDrawLoop").innerHTML += '<div id="CardDraw"><div id="CardBody"> <div id="ThreeSymbols"> <div id="leftTopSymbolDiv"><div id="leftCornerSymbol">' + randomCorner + '</div></div><div id="centerSymbolDiv"><div><h1 id="centerSymbol">' + randomCenter + '</h1> </div></div> <div id="rightBottomSymbolDiv"><div id="rightCornerSymbol">' + randomCorner + '</div></div></div></div></div>';
+            };
+        }
+    </script>
+    </div>
+</body>
+
+</html>
