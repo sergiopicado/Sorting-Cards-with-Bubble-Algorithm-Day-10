@@ -1,4 +1,12 @@
 
+#bubbleSortDiv{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+min-height: 50px;
+justify-content: center;
+margin-top: 20px;
+}
 body { 
 display: flex;
 flex-direction: column;
@@ -6,9 +14,18 @@ justify-content: center;
 background-color: green;
 max-width: 800px;
 }
-#cardDrawLoop{ 
+#cardDrawLoop1{ 
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 10px;
+max-width: 800px;
+}
+#cardDrawLoop2{ 
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 justify-content: center;
 margin-top: 10px;
 max-width: 800px;
@@ -41,12 +58,14 @@ color: black;
 #CardDraw{ 
 display: flex;
 flex-direction: row;
+margin-top: 10px;
 }
 #CardBody {
 display: flex;
 background-color: green;
 min-width: max-content;
 min-height: max-content;
+margin-top: 10px;
 }
 #ThreeSymbols{ 
 border-radius: 10px;
